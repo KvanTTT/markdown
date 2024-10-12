@@ -134,7 +134,7 @@ import java.util.Stack;
   }
 
   private boolean isBlockTag(String tagName) {
-    return HtmlHelper.BLOCK_TAGS.contains(tagName.toLowerCase());
+    return HtmlHelper.BLOCK_TAGS.contains(tagName.lowercase());
   }
 
   private boolean canInline() {
