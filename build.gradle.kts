@@ -40,8 +40,8 @@ kotlin {
         compilations.all {
             compileTaskProvider.configure {
                 compilerOptions {
-                    languageVersion.set(KotlinVersion.KOTLIN_2_0)
-                    apiVersion.set(KotlinVersion.KOTLIN_2_0)
+                    languageVersion.set(KotlinVersion.KOTLIN_2_1)
+                    apiVersion.set(KotlinVersion.KOTLIN_2_1)
                 }
             }
         }
@@ -78,7 +78,8 @@ kotlin {
     iosSimulatorArm64()
     watchosSimulatorArm64()
     tvosSimulatorArm64()
-    ios()
+    iosArm64()
+    iosSimulatorArm64()
 
     sourceSets {
         all {
@@ -116,7 +117,7 @@ kotlin {
             "mingwX64",
             "macosX64",
             "macosArm64",
-            "ios",
+            "iosArm64",
             "iosSimulatorArm64",
             "watchosSimulatorArm64",
             "tvosSimulatorArm64"
