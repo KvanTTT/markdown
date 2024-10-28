@@ -32,6 +32,7 @@ group = "org.jetbrains"
 version = obtainProjectVersion()
 
 repositories {
+    maven("/Users/Ivan.Kochurkin/Documents/JetBrains/kotlin/build/repo")
     mavenCentral()
 }
 
